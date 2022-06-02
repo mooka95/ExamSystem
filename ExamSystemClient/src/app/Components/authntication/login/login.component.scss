@@ -1,0 +1,40 @@
+.login-form{
+    margin: 5rem 22rem 0 22rem;
+
+}
+.form-check{
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+.login-form{
+    padding: 0 1rem;
+}
+.info{
+    margin-bottom: 1rem;
+}
+.login-btn{
+    margin-bottom: 1rem;
+    background-color:red;
+    border: none;
+    box-shadow: 2px 2px 2px red;
+    padding: 0.4rem 2rem;
+    border-radius:5px;
+
+}
+.form-check-input:checked {
+    background-color: red;
+    border-color: red;
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+  }
+  .slogan{
+      background-color:red;
+      text-align: center;
+      color:white;
+      margin: -1.2rem 18rem 0rem;
+      padding:0.5rem 0;
+      border-radius:2rem
+
+  }
