@@ -1,0 +1,39 @@
+<mat-horizontal-stepper linear #stepper>
+  <mat-step [editable]="isEditable" [stepControl]="subjectnameform">
+    <ng-template matStepLabel>Name Of Subject</ng-template>
+    <form class="name-form" [formGroup]="subjectnameform" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="inputname" style="padding-left:0.5rem">Name</label>
+        <input type="text" class="form-control subject-name" id="inputname" placeholder="Enter name of subject"
+          formControlName="subjectname">
+      </div>
+      <button type="submit" class="btn" matStepperNext [disabled]="subjectnameform.invalid">Next</button>
+    </form>
+  </mat-step>
+  <mat-step [editable]="isEditable">
+    <ng-template matStepLabel>Questions {{subjectnameform.value.subjectname}}</ng-template>
+
+    <app-question-form></app-question-form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Show Exam</ng-template>
+   <h5 class="subject">Math</h5>
+    <div class="card">
+      <div class="card-title">Question1) 2*2</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">A.2</div>
+          <div class="col-6">B.2</div>
+        </div>
+        <div class="row">
+          <div class="col-6">c.4</div>
+          <div class="col-6">D.6</div>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__footer-answer">CorrectAnswer:4</div>
+        <button class="card__footer-button ">Delete</button>
+      </div>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

@@ -1,0 +1,40 @@
+.navbar{
+    background-color:#e32207;
+    display:flex;
+    &__heading{
+        display: flex;
+    
+        padding-left:5rem;
+        &-icon{
+            color: white;
+            font-size:2rem;
+            padding-top: 0.2rem;
+        }
+        &-slogan{
+            color:white;
+            text-decoration: none;
+            padding-left: 0.8rem;
+
+        }
+
+    }
+
+
+}
+.navbar__buttons{
+    display: flex;
+    color: rgba(255, 255, 255, 0.892);
+    padding-right: 5rem;
+    cursor: pointer;
+    &-register{
+        padding: 0.5rem 0.5rem;
+
+    }
+    &-login{
+        padding: 0.5rem 0.5rem;
+    }
+}
+.is-active{
+color: white;
+	font-weight: bold;
+}

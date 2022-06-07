@@ -1,7 +1,5 @@
+
 @use "../../../Styles/mixins" as mi; 
-
-
-
 .login-form{
     margin: 5rem 22rem 0 22rem;
     @include mi.respond (phone){
@@ -10,16 +8,17 @@
  }
 
 }
-.form-check{
-    padding-top: 2rem;
-    margin-bottom: 2rem;
 
-}
 .login-form{
     padding: 0 1rem;
 }
 .info{
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+    @include mi.respond (phone){
+        margin:0rem ;
+ 
+ }
+
 }
 .login-btn{
     margin-bottom: 2rem;
@@ -28,7 +27,6 @@
     box-shadow: 2px 2px 2px #e32207;;
     padding: 0.4rem 2rem;
     border-radius:5px;
-    border: 1px solid #e32207
 
 }
 .form-check-input:checked {
@@ -51,14 +49,14 @@
  
  }
 
+ 
   }
   .form-group{
     @include mi.respond (phone){
-     margin-bottom: 0.5rem;
+     margin: 1.5rem 0;
  
  }
-
-  }
-  input{
+}
+input{
     box-shadow:2px 2px 2px black;
 }

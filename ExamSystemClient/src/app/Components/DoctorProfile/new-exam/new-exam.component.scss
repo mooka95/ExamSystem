@@ -1,0 +1,56 @@
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #e32207; 
+ }
+
+ .name-form{
+     margin-top:1rem;
+     display: flex;
+    
+ }
+ .name-form input{
+     margin-top:0.5rem
+
+ }
+ .btn{
+     background-color:#e32207;
+     margin-inline-start: 1rem;
+     color: white;
+     padding: 0rem 1rem ;
+     margin-top:2rem
+ }
+ input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+  }
+  .card{
+      border-radius: 3px;
+      padding:2rem;
+      margin: 0rem 10rem;
+      &__footer{
+          display:flex;
+          justify-content:space-between;
+         
+          &-answer{
+              color: green;
+              padding-top:0.8rem
+              
+          }
+          &-button{
+            background-color:#e32207;
+            color: white;
+            border-radius: 5px;
+            border-color:white ;
+            padding:0.5rem 1rem;
+          }
+      }
+  }
+  .subject{
+    background-color:#e32207;
+      text-align: center;
+      margin: 1rem 40rem;
+      color: white;
+      padding: 1rem 0;
+      border-radius: 2rem;
+  }
+  
+  
