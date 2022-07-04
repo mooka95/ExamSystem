@@ -1,0 +1,16 @@
+
+
+ @use '../../../Styles/variables';
+ @use '../../../Styles/animations' as *;
+
+.error{
+    background-color:variables.$color-Primary;
+    padding:1rem 0 1rem 0.8rem;
+    border-radius:5px;
+    margin-top:0.5rem;
+    color:white;
+
+    text-align: center;
+    animation: moveDown 2s ;
+
+}

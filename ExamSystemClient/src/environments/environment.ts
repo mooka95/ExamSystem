@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  english_Api_URL: "https://modified-db-project.herokuapp.com"
 };
 
 /*

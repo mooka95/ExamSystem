@@ -1,0 +1,22 @@
+<div *ngIf="!studentRegisterForm.get(this.controlName).valid && studentRegisterForm.get(this.controlName).touched"
+  class="error">
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['required'] && this.controlName=== 'name'  ">name is required</div>
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['minlength'] && this.controlName=== 'name'  ">please
+    enter 3 characters or more</div>
+
+    <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['required'] && this.controlName=== 'password'  ">
+       password is required</div>
+
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['minlength'] && this.controlName=== 'password'  ">
+    please enter 6 characters minimum</div>
+    <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['maxlength'] && this.controlName=== 'password'  ">
+        please enter 20 characters maximum</div>
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['email'] && this.controlName=== 'email' ">must be in Email format</div>
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['required'] && this.controlName=== 'email' ">Email is required</div>
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['mismatch'] && this.controlName=== 'confirmPassword' ">
+     password must match </div>
+  <div *ngIf="this.studentRegisterForm.get(this.controlName).errors['required'] && this.controlName=== 'confirmPassword' ">password required </div>
+  
+
+
+</div>

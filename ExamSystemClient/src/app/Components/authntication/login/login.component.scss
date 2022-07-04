@@ -1,10 +1,10 @@
-@use "../../../Styles/mixins" as mi; 
+@use "../../../Styles/mixins"; 
 
 
 
 .login-form{
     margin: 5rem 22rem 0 22rem;
-    @include mi.respond (phone){
+    @include mixins.respond (phone){
         margin:4rem ;
  
  }
@@ -46,14 +46,14 @@
       margin: -1.2rem 18rem 0rem;
       padding:0.5rem 0;
       border-radius:2rem;
-      @include mi.respond (phone){
+      @include mixins.respond (phone){
         margin:-1.2rem 2rem 0rem 2rem ;
  
  }
 
   }
   .form-group{
-    @include mi.respond (phone){
+    @include mixins.respond (phone){
      margin-bottom: 0.5rem;
  
  }
